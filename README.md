@@ -61,10 +61,10 @@ Attention giúp mô hình tập trung vào các phần quan trọng của input 
 ## 1.6 Global vs Local Attention
 
 ### 1.6.1 Global / Soft Attention
-- Xét toàn bộ input sequence  
+ Xét toàn bộ input sequence  
 
 ### 1.6.2 Local / Hard Attention
-- Chỉ tập trung vào một phần input  
+ Chỉ tập trung vào một phần input  
 
 ---
 
@@ -83,26 +83,12 @@ Một số hàm phổ biến:
 
 ## 1.9 Cách hoạt động của Attention
 
-### 1.9.1 Chuẩn bị Encoder Hidden State  
-### 1.9.2 Tính Alignment Score  
-### 1.9.3 Softmax hóa Score  
-### 1.9.4 Tính Context Vector  
-### 1.9.5 Tổng hợp Context  
-### 1.9.6 Đưa vào Decoder  
-
----
-
-## 1.10 Kết luận
-Attention giải quyết hạn chế của Seq2Seq và cải thiện hiệu suất đáng kể.
-
 ---
 
 # CHƯƠNG 2 – KIẾN TRÚC TRANSFORMER
 
 ## 2.1 Positional Encoding
 Giúp mô hình hiểu thứ tự của từ trong chuỗi.
-
----
 
 ## 2.2 Masked Multi-Head Attention
 Ngăn mô hình nhìn thấy future tokens trong quá trình training.
@@ -121,20 +107,8 @@ Ngăn mô hình nhìn thấy future tokens trong quá trình training.
 ### 2.4.1 Self-Attention là gì?
 Cơ chế cho phép mỗi từ “chú ý” đến các từ khác trong câu.
 
----
-
 ### 2.4.2 Quy trình Self-Attention
 
-#### Bước 1: Chuẩn bị Input  
-#### Bước 2: Khởi tạo Weight (Q, K, V)  
-#### Bước 3: Tính Q, K, V  
-#### Bước 4: Tính Attention Score  
-#### Bước 5: Softmax  
-#### Bước 6: Weighted Values  
-#### Bước 7: Tổng hợp Output  
-#### Bước 8: Lặp lại cho các token  
-
----
 
 ### 2.4.3 Multi-Head Self-Attention
 - Chạy nhiều attention song song  
@@ -190,10 +164,4 @@ Giữ thông tin vị trí của token trong chuỗi.
 
 ---
 
-## 3.7 So sánh với RNN
 
----
-
-# CHƯƠNG 4 – THƯ VIỆN FAKER
-
-## 4.1 Cài đặt Faker
